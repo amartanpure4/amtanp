@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    .upper{
+        height: 30px;
+        width: 70px;
+        background-color: black;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        position: absolute;
+        top: 350px;
+        left: 20px;
+    }
+    .middle{
+        height: 40px;
+        width: 100px;
+        background-color: black;
+        border-radius: 10px;
+        position: absolute;
+        top: 375px;
+        left: 5px;
+    }
+    .tyre1{
+        height: 25px;
+        width: 25px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 400px;
+        left: 20px;
+    }
+    .tyre2{
+        height: 25px;
+        width: 25px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 400px;
+        left: 65px;
+    }
+    .road{
+        height: 3px;
+        width: 100%;
+        background-color: black;
+        position: relative;
+        top: 427px;
+    }
+    .all{
+        position: absolute;
+        top: 5px;
+        bottom: 850px;
+        transform: rotate(30deg);
+        animation: move 4s ease-in-out infinite alternate;
+    }
+    @keyframes move{
+        from{transform: translate(0,0);}
+        to{transform: translate(1000px,0px);}
+    }
+</style>
+<body>
+    <div class="all">
+      <div class="upper"></div>
+      <div class="middle"></div>
+      <div class="tyre1"></div>
+      <div class="tyre2"></div>
+    </div>
+    <div class="road"></div>
+</body>
+</html>
